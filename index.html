@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calkify</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+
+    <div class="calculator">
+        <div id="total"></div>
+
+        <div class="row">
+            <button class="button" onclick="showButton('7')">7</button>
+            <button class="button" onclick="showButton('8')">8</button>
+            <button class="button" onclick="showButton('9')">9</button>
+            <button class="button button-operator" onclick="showButton('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="showButton('4')">4</button>
+            <button class="button" onclick="showButton('5')">5</button>
+            <button class="button" onclick="showButton('6')">6</button>
+            <button class="button button-operator" onclick="showButton('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="showButton('1')">1</button>
+            <button class="button" onclick="showButton('2')">2</button>
+            <button class="button" onclick="showButton('3')">3</button>
+            <button class="button button-operator" onclick="showButton('*')">x</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="showButton('0')">0</button>
+            <button class="button" id="clear-button" onclick="clearExpression()">C</button>
+            <button class="button" id="equal-button" onclick="calculate()">=</button>
+            <button class="button button-operator" onclick="showButton('/')">÷</button>
+        </div>
+    </div>
+
+    <script>
+        let total = document.getElementById('total');
+        let currentExpression = '';
+
+        /**
+         * Muestra el valor de un botón en la pantalla.
+         *
+         * @param {string} value - El valor del botón presionado.
+         */
+        function showButton(value) {
+            currentExpression += value;
+            total.innerText = currentExpression;
+        }
+
+        /**
+         * Limpia la expresión actual y la pantalla.
+         */
+        function clearExpression() {
+            currentExpression = '';
+            total.innerText = '';
+        }
+
+        /**
+         * Evalúa la expresión matemática y muestra el resultado.
+         */
+        function calculate() {
+            let expression = currentExpression;
+
+            // Manualmente se manejan las operaciones sin usar expresiones regulares
+            if (expression.includes('+')) {
+                let parts = expression.split('+');
+                let result = parseFloat(parts[0]) + parseFloat(parts[1]);
+                total.innerText = result;
+                currentExpression = result.toString();
+            } else if (expression.includes('-')) {
+                let parts = expression.split('-');
+                let result = parseFloat(parts[0]) - parseFloat(parts[1]);
+                total.innerText = result;
+                currentExpression = result.toString();
+            } else if (expression.includes('*')) {
+                let parts = expression.split('*');
+                let result = parseFloat(parts[0]) * parseFloat(parts[1]);
+                total.innerText = result;
+                currentExpression = result.toString();
+            } else if (expression.includes('/')) {
+                let parts = expression.split('/');
+                if (parseFloat(parts[1]) === 0) {
+                    total.innerText = 'Error';
+                    currentExpression = '';
+                } else {
+                    let result = parseFloat(parts[0]) / parseFloat(parts[1]);
+                    total.innerText = result;
+                    currentExpression = result.toString();
+                }
+            } else {
+                total.innerText = 'Error';
+                currentExpression = '';
+            }
+        }
+    </script>
+
+</body>
+</html>
