@@ -1,41 +1,56 @@
-# Calculadora Web – Simple, Rápida y Funcional
+# Calkify 🧮
 
-![Tecnologías](https://img.shields.io/badge/Tech-HTML%20|%20CSS%20|%20JavaScript-lightgrey)
-![Estado](https://img.shields.io/badge/Status-Completado-brightgreen)
-
----
-
-## Descripción
-
-Calculadora web sencilla y eficiente, diseñada para realizar operaciones matemáticas básicas con rapidez y precisión.  
-Ideal para usuarios que necesitan resultados inmediatos sin complicaciones.
+> Calculadora web simple, rápida y elegante para resolver operaciones básicas sin complicaciones.
 
 ---
 
-## Características clave
+## 🔍 Descripción
 
-- Interfaz limpia y minimalista para un uso intuitivo  
-- Funciona en cualquier dispositivo gracias a su diseño responsive  
-- Carga rápida y sin dependencias externas  
-- Perfecta para incorporar en cualquier proyecto o usar como herramienta independiente
+Calkify es una calculadora online con un diseño limpio y funcional que te permite realizar cálculos básicos de manera eficiente. Su interfaz minimalista asegura que puedas operar sin distracciones y desde cualquier dispositivo.
 
 ---
 
-## Cómo usar
+## ✨ Características
 
-1. Clona este repositorio  
-2. Abre el archivo `index.html` en tu navegador favorito  
-3. Realiza cálculos básicos con facilidad y rapidez
-
----
-
-## Contacto
-
-¿Quieres que tus proyectos web tengan la misma claridad y funcionalidad?  
-Hablemos por WhatsApp: [https://wa.me/34689906638](https://wa.me/34689906638)  
-O envíame un correo: nicolassanmarcos4@email.com
+- ✅ Operaciones básicas: suma, resta, multiplicación y división  
+- ✅ Diseño claro y elegante  
+- ✅ Responsive: funciona perfecto en móviles, tablets y ordenadores  
+- ✅ Interfaz intuitiva y sin elementos superfluos
 
 ---
 
-© 2025 Proyecto Calculadora – Sencillez y eficacia al alcance de un clic.
+## 🚀 Demo en vivo
 
+[Ver demo en GitHub Pages](https://n1c0sm.github.io/Calkify/)
+
+---
+
+## 🛠 Tecnologías usadas
+
+- HTML  
+- CSS  
+- JavaScript
+
+---
+
+## 📱 Responsive
+
+Calkify está diseñada para funcionar y verse bien en cualquier dispositivo, adaptándose al tamaño de pantalla automáticamente.
+
+---
+
+## 📩 Contacto
+
+¿Quieres consultarme algo o necesitas ayuda con un proyecto? Escríbeme por WhatsApp:
+
+[Contáctame por WhatsApp](https://wa.me/34689906638)
+
+---
+
+## 📝 Licencia
+
+MIT License © 2025 Nicolás San Marcos
+
+---
+
+*Gracias por visitar este proyecto 👋*
