@@ -1,56 +1,34 @@
-# Calkify 🧮
+# Calkify
 
-> Calculadora web simple, rápida y elegante para resolver operaciones básicas sin complicaciones.
+Prototipo de calculadora con HTML, CSS y JavaScript. Proyecto de Nicolás San Marcos para practicar interacción y lógica de cálculo.
 
----
+[Ver demo](https://n1c0sm.github.io/Calkify/)
 
-## 🔍 Descripción
+## Qué incluye
 
-Calkify es una calculadora online con un diseño limpio y funcional que te permite realizar cálculos básicos de manera eficiente. Su interfaz minimalista asegura que puedas operar sin distracciones y desde cualquier dispositivo.
+- Botones de números y operadores.
+- Pantalla para la expresión y el resultado.
+- Controles para calcular y limpiar la pantalla.
 
----
+## Ejecutar localmente
 
-## ✨ Características
+```bash
+git clone https://github.com/N1C0SM/Calkify.git
+cd Calkify
+```
 
-- ✅ Operaciones básicas: suma, resta, multiplicación y división  
-- ✅ Diseño claro y elegante  
-- ✅ Responsive: funciona perfecto en móviles, tablets y ordenadores  
-- ✅ Interfaz intuitiva y sin elementos superfluos
+Abre `index.html` en el navegador. No necesita instalación de dependencias ni compilación.
 
----
+## Estructura
 
-## 🚀 Demo en vivo
+- `index.html`: interfaz.
+- `css/styles.css`: estilos.
+- `js/script.js`: lógica e interacción.
 
-[Ver demo en GitHub Pages](https://n1c0sm.github.io/Calkify/)
+## Alcance actual
 
----
+El evaluador necesita correcciones: no resuelve correctamente sumas, restas y determinadas expresiones combinadas. Es un ejercicio de aprendizaje, no una calculadora para resultados fiables. El siguiente paso es corregir y comprobar el evaluador.
 
-## 🛠 Tecnologías usadas
+## Licencia
 
-- HTML  
-- CSS  
-- JavaScript
-
----
-
-## 📱 Responsive
-
-Calkify está diseñada para funcionar y verse bien en cualquier dispositivo, adaptándose al tamaño de pantalla automáticamente.
-
----
-
-## 📩 Contacto
-
-¿Quieres consultarme algo o necesitas ayuda con un proyecto? Escríbeme por WhatsApp:
-
-[Contáctame por WhatsApp](https://wa.me/34689906638)
-
----
-
-## 📝 Licencia
-
-MIT License © 2025 Nicolás San Marcos
-
----
-
-*Gracias por visitar este proyecto 👋*
+[MIT](LICENSE.md) · Nicolás San Marcos.
